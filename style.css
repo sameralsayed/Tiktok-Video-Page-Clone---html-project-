@@ -1,0 +1,97 @@
+:root {
+    --tt-pink: #FE2C55;
+    --tt-dark-bg: #121212;
+}
+
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Nav Adjustment */
+.navbar {
+    height: 60px;
+    z-index: 1050;
+}
+
+.search-container {
+    width: 360px;
+}
+
+/* Layout */
+.video-page-container {
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+}
+
+.video-viewer {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.interaction-sidebar {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Components */
+.tt-brand-btn {
+    background-color: var(--tt-pink);
+    border: none;
+}
+
+.btn-close-video {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.icon-btn {
+    background: #f1f1f2;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+    background: #e1e1e2;
+}
+
+.like-btn.active {
+    color: var(--tt-pink);
+}
+
+/* Mobile Breakpoints */
+@media (max-width: 991px) {
+    body {
+        overflow: auto;
+    }
+    .video-page-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .video-viewer {
+        height: 70vh;
+    }
+    .interaction-sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
