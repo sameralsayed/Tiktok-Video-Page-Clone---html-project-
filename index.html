@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch Billie Eilish's latest video on TikTok. Join the community to watch trending videos and discover creators.">
+    <meta name="keywords" content="Billie Eilish, TikTok, Video, Music, Pop, Trending">
+    <meta name="author" content="SAMER SAEID">
+    <title>Billie Eilish (@billieeilish) | TikTok Video Replica</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg width="118" height="42" viewBox="0 0 118 42"><path d="M102.3 21.1c-1.3-.4-2.6-.6-4-.6-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-16.5c3.2 2.5 7.2 4 11.7 4v-7.3c-5.9 0-10.7-4.8-10.7-10.7h-5v23.1zM11 21.1C9.7 20.7 8.4 20.5 7 20.5c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8V5.4c3.2 2.5 7.2 4 11.7 4V2.1c-5.9 0-10.7-4.8-10.7-10.7h-5v29.7z" fill="#000"/></svg>
+            </a>
+            <div class="d-none d-md-flex mx-auto search-container">
+                <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="Search">
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-danger fw-bold px-4 tt-brand-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="video-page-container d-flex flex-column flex-lg-row">
+        
+        <section class="video-viewer bg-black d-flex align-items-center justify-content-center position-relative">
+            <button class="btn-close-video">✕</button>
+            <video id="mainVideo" class="h-100" loop playsinline src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"></video>
+            <div class="video-controls-overlay">
+                <button id="playPauseBtn">▶</button>
+            </div>
+        </section>
+
+        <section class="interaction-sidebar bg-white border-start p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="https://ui-avatars.com/api/?name=Billie+Eilish&background=000&color=fff" class="rounded-circle" width="40" height="40" alt="Billie Eilish">
+                    <div>
+                        <h6 class="mb-0 fw-bold">billieeilish <span class="text-info">✔</span></h6>
+                        <p class="small text-secondary mb-0">Billie Eilish</p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger btn-sm fw-bold px-3 follow-btn">Follow</button>
+            </div>
+
+            <div class="video-desc mb-3">
+                <p>HIT ME HARD AND SOFT ⚡️ <span class="text-primary">#billieeilish #newmusic</span></p>
+                <p class="small fw-bold"><span class="me-2">🎵</span> original sound - Billie Eilish</p>
+            </div>
+
+            <div class="stats-bar d-flex gap-4 py-3 border-top border-bottom">
+                <div class="stat-item d-flex align-items-center gap-1">
+                    <button class="icon-btn like-btn">❤️</button>
+                    <span class="fw-bold small">1.2M</span>
+                </div>
+                <div class="stat-item d-flex align-items-center gap-1">
+                    <button class="icon-btn">💬</button>
+                    <span class="fw-bold small">45.8K</span>
+                </div>
+                <div class="stat-item d-flex align-items-center gap-1">
+                    <button class="icon-btn">🔖</button>
+                    <span class="fw-bold small">120K</span>
+                </div>
+            </div>
+
+            <div class="comments-area flex-grow-1 overflow-auto py-3">
+                <div class="text-center text-secondary py-5">
+                    <p>Log in to see comments</p>
+                </div>
+            </div>
+
+            <div class="sidebar-footer border-top pt-3">
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                    <button class="btn btn-light btn-sm rounded-pill w-100">Copy link</button>
+                </div>
+                <div class="text-center text-secondary small">
+                    <p class="mb-1">Copyright SAMER SAEID. &copy; 2026</p>
+                    <p class="mb-0">SAMER SAEID Made by ♥️ <a href="https://bio.link/samer" target="_blank" class="text-dark fw-bold text-decoration-none">Follow Me</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
